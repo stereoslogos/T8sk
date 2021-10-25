@@ -18,16 +18,20 @@ class TaskManager{
     }
 
     add(){
-        this.lastId++;
-        this.tasks.push({
-            id: this.lastId,
-            text: this.tagText.value});
-        localStorage.setItem(
-            this._labelStorage,
-            JSON.stringify(this.tasks));
-            this.tagText.value = "";
-            this.tagText.focus();
-            this.refresh();
+        if(this.tagText.value == ""){
+            alert("Type something first.");
+        }else{
+            this.lastId++;
+            this.tasks.push({
+                id: this.lastId,
+                text: this.tagText.value});
+            localStorage.setItem(
+                this._labelStorage,
+                JSON.stringify(this.tasks));
+                this.tagText.value = "";
+                this.tagText.focus();
+                this.refresh();
+        }
     }
 
     remove(id){
