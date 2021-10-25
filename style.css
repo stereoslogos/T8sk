@@ -4,8 +4,7 @@
     --br: 5px;
     --border: solid 1px rgba(255, 255, 255, 0.5);
 }
-*{
-}
+
 body{
     background: var(--bg);
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22eb9030-7213-47b4-b06e-acccbf01ab48/d64opv4-04838a4f-bd01-45da-b6b6-45e8d7c315f1.png/v1/fill/w_1131,h_707,strp/free_abstract_c4d_2_by_gumnade_d64opv4-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcLzIyZWI5MDMwLTcyMTMtNDdiNC1iMDZlLWFjY2NiZjAxYWI0OFwvZDY0b3B2NC0wNDgzOGE0Zi1iZDAxLTQ1ZGEtYjZiNi00NWU4ZDdjMzE1ZjEucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.btOqiSNXExI8crVguTge5svEqmepDzjV71ugQguj-Bk");
