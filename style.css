@@ -37,11 +37,12 @@ textarea{
     border-radius: var(--br);
     resize: none;
     font-size: 1em;
-    min-height: min-content;
-    max-height: max-content;
+    min-height: 5em;
+    max-height: fit-content;
     padding: 15px 15px;
     background: black;
     color: ivory;
+    outline: none;
 }
 
 h1{
@@ -127,3 +128,9 @@ label{
         background: rgb(168, 0, 0);
     }
 }
+
+@media (min-width: 600px){
+    textarea{
+        width:600px;
+    }
+  }
