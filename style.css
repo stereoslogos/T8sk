@@ -10,7 +10,6 @@ body{
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22eb9030-7213-47b4-b06e-acccbf01ab48/d64opv4-04838a4f-bd01-45da-b6b6-45e8d7c315f1.png/v1/fill/w_1131,h_707,strp/free_abstract_c4d_2_by_gumnade_d64opv4-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcLzIyZWI5MDMwLTcyMTMtNDdiNC1iMDZlLWFjY2NiZjAxYWI0OFwvZDY0b3B2NC0wNDgzOGE0Zi1iZDAxLTQ1ZGEtYjZiNi00NWU4ZDdjMzE1ZjEucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.btOqiSNXExI8crVguTge5svEqmepDzjV71ugQguj-Bk");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
     
     box-sizing: border-box;
     
@@ -18,6 +17,8 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+
+    transition: all 1s ease;
 }
 
 .box{
@@ -55,7 +56,7 @@ label{
 }
 
 .btn-save{
-    background: hsl(90, 60%, 50%);
+    background: hsl(120, 60%, 40%);
     border: none;
     border-radius: var(--br);
     color: white;
@@ -64,9 +65,11 @@ label{
 }
 
 .btn-save:hover{
-    background: hsl(90, 60%, 50%);
-    box-shadow: 0 5px 10px 2px rgba(10, 255, 63, 0.5);
+    box-shadow: 0 0px 10px 2px hsla(133, 100%, 60%, 0.5);
     cursor: pointer;
+    animation-name: btn-save;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 
 .btn-clean{
@@ -78,9 +81,11 @@ label{
     font-weight: bolder;
 }
 .btn-clean:hover{
-    background: rgb(168, 0, 0);
     box-shadow: 0 1px 10px 2px rgba(255, 0, 0, 0.582);
     cursor: pointer;
+    animation-name: btn-clean;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 
 #divTasks > div{
@@ -88,10 +93,11 @@ label{
     backdrop-filter: blur(5px);
     border-radius: var(--br);
     border: var(--border);
-    color: black;
+    color: white;
     padding: 10px;
     margin: 5px;
     min-height: min-content;
+    min-width: 30px;
     max-width: 90%;
     display: flex;
     box-shadow: 0 10px 20px 5px rgba(0,0,0,0.3);
@@ -105,6 +111,19 @@ label{
 }
 
 .btnDiv{
+    margin-left: 5px;
     text-align: right;
     float: right;
+}
+
+@keyframes btn-save{
+    100%{
+        background: hsl(120, 60%, 30%);
+    }
+}
+
+@keyframes btn-clean{
+    100%{
+        background: rgb(168, 0, 0);
+    }
 }
